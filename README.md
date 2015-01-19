@@ -1,4 +1,4 @@
 # SphereCube
 VB.net Project for School
 
-One of my first programs.
+One of my first vb.net programs.
