@@ -1,7 +1,7 @@
 ﻿Module Module1
-    Dim input As String
     Sub Main()
         ' Set Variables
+        Dim input As String
         Dim Volume As Double = 0
         Dim Length As Double = 0
         Dim Radius As Double = 0
@@ -21,7 +21,7 @@
             ' --Calculate Cube Volume
             Volume = Length ^ 3
 
-        Else
+        ElseIf input = "2" Then
             ' - Sphere
 
             ' -- Prompt for Radius
@@ -30,7 +30,6 @@
 
             ' -- Calculate Sphere Volume
             Volume = (4 / 3) * Math.PI * (Radius ^ 3)
-
         End If
 
         ' Output Volume
@@ -38,9 +37,11 @@
         If input = "1" Then
             Console.WriteLine("Cube has a volume of " + ResultString)
 
-        Else
+        ElseIf input = "2" Then
 
             Console.WriteLine("Sphere has a volume of " + ResultString)
+        Else
+            Console.WriteLine("You did not enter a 1 or 2 for cube or sphere.")
         End If
 
 
